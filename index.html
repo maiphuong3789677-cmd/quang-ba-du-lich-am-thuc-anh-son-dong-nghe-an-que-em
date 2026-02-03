@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Du lịch & Ẩm thực Anh Sơn Đông – Nghệ An</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      background-image:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Doi_che_nghe_an.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 40px 20px;
+    }
+    .hero h1 { font-size: 44px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; max-width: 700px; margin: auto; }
+
+    .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+    h2 {
+      text-align: center;
+      color: #1b5e20;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      width: 80px;
+      height: 3px;
+      background: #1b5e20;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 3px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 18px rgba(0,0,0,.08);
+      transition: transform .25s, box-shadow .25s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(0,0,0,.15);
+    }
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+    .card .content { padding: 16px; }
+    .card h3 { margin: 0 0 8px; color: #1b5e20; }
+    .card p { font-size: 14px; line-height: 1.6; margin: 0; }
+
+    .food-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+    }
+    .food {
+      background: #ffffff;
+      border-left: 5px solid #1b5e20;
+      padding: 14px 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.06);
+    }
+
+    footer {
+      background: #1b5e20;
+      color: #fff;
+      text-align: center;
+      padding: 18px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div>
+      <h1>Du lịch & Ẩm thực Anh Sơn Đông</h1>
+      <p>Khám phá vẻ đẹp thiên nhiên, văn hóa tâm linh và ẩm thực truyền thống của huyện Anh Sơn, tỉnh Nghệ An.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Địa điểm du lịch nổi bật</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Vietnamese_temple.jpg" />
+        <div class="content">
+          <h3>Đền Đức Ông</h3>
+          <p>Địa điểm tâm linh quen thuộc của người dân địa phương, mang giá trị lịch sử và văn hóa sâu sắc.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Den_Qua_Son.jpg" />
+        <div class="content">
+          <h3>Đền Quả Sơn</h3>
+          <p>Di tích lịch sử nổi tiếng thờ Uy Minh Vương Lý Nhật Quang, thu hút nhiều du khách thập phương.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Vietnam_dam.jpg" />
+        <div class="content">
+          <h3>Đập Đồng Quan</h3>
+          <p>Công trình thủy lợi gắn với đời sống sản xuất, sở hữu khung cảnh yên bình, thoáng đãng.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Doi_che_nghe_an.jpg" />
+        <div class="content">
+          <h3>Đồi chè Cao Sơn</h3>
+          <p>Không gian xanh mát, những đồi chè trải dài tạo nên vẻ đẹp thơ mộng của vùng núi Nghệ An.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Song_Lam.jpg" />
+        <div class="content">
+          <h3>Sông Lam</h3>
+          <p>Dòng sông biểu tượng của xứ Nghệ, gắn liền với lịch sử, văn hóa và đời sống người dân.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Ẩm thực địa phương</h2>
+    <div class="food-list">
+      <div class="food">Cháo lươn Nghệ An</div>
+      <div class="food">Bánh mướt</div>
+      <div class="food">Cá mát sông Lam</div>
+      <div class="food">Canh lá đắng</div>
+      <div class="food">Cam Xã Đoài</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 – Website quảng bá du lịch và ẩm thực Anh Sơn Đông, Nghệ An</p>
+  </footer>
+
+</body>
+</html>
